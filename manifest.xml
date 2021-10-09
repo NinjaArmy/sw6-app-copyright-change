@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/trunk/src/Core/Framework/App/Manifest/Schema/manifest-1.0.xsd">
+    <meta>
+        <name>NINJACopyrightChange</name>
+        <label>Copyright Change</label>
+        <label lang="de-DE">Copyright Wechsel</label>
+        <description>Allows you to change the copyright in the footer to your needs.</description>
+        <description lang="de-DE">Erlaubt es Ihnen das Copyright im Footer anzupassen.</description>
+        <author>Joschi Mehta</author>
+        <copyright>(c) by Ninja Army</copyright>
+        <version>1.0.0</version>
+        <icon>Resources/config/plugin.png</icon>
+        <license>proprietary</license>
+    </meta>
+</manifest>

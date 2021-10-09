@@ -1,0 +1,47 @@
+{% sw_extends '@Storefront/storefront/layout/footer/footer.html.twig' %}
+
+{% block layout_footer_bottom %}
+	{% set backgroundColor = config('NINJACopyrightChange.config.backgroundColor') %}
+	{% set vatColor = config('NINJACopyrightChange.config.vatTextColor') %}
+	{% set linkColor = config('NINJACopyrightChange.config.linkColor') %}
+	{% set linkHoverColor = config('NINJACopyrightChange.config.linkHoverColor') %}
+
+	<div class="footer-bottom" style="background-color: {{backgroundColor}}">
+		{% block layout_footer_service_menu %}
+			{{parent()}}
+		{% endblock %}
+
+		{% block layout_footer_vat %}
+			<span style="color: {{vatColor}}; --ninja-vat-link-color: {{linkColor}}; --ninja-vat-link-hover-color: {{linkHoverColor}}">
+				{{parent()}}
+			</span>
+		{% endblock %}
+
+		{% if not config('NINJACopyrightChange.config.removeCopyright') %}
+
+			{% set copyrightIcon = config('NINJACopyrightChange.config.copyrightIcon') %}
+			{% set copyrightText = config('NINJACopyrightChange.config.copyrightText') %}
+			{% set textColor = config('NINJACopyrightChange.config.textColor') %}
+			{% set iconColor = config('NINJACopyrightChange.config.iconColor') %}
+
+
+			<div class="footer-copyright" style="color: {{textColor}}">
+
+				{% if copyrightIcon == 'copyright' %}
+					<span class="icon icon-xs" style="color: {{iconColor}}">
+						&copy;
+					</span>
+				{% else %}
+					<span style="--ninja-cc-color: {{iconColor}}">
+						{% sw_include "@Storefront/storefront/utilities/icon.html.twig" with { 'name': copyrightIcon, 'size': 'xs'} %}
+					</span>
+				{% endif %}
+				{% if copyrightText is not empty %}
+					{{ copyrightText |trans|sw_sanitize }}
+				{% else %}
+					{{ "footer.copyrightInfo"|trans|sw_sanitize }}
+				{% endif %}
+			</div>
+		{% endif %}
+	</div>
+{% endblock %}

@@ -1,0 +1,26 @@
+.footer-copyright {
+    span {
+        .icon {
+            svg {
+                path {
+                    fill: var(--ninja-cc-color);
+                }  
+            }
+        }
+    }
+}
+
+.footer-bottom {
+    span {
+        .footer-vat {
+            p {
+                a {
+                    color: var(--ninja-vat-link-color);
+                }
+                a:hover {
+                    color: var(--ninja-vat-link-hover-color);
+                }
+            }
+        }
+    }
+}

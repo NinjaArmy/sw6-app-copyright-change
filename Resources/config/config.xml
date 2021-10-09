@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/v6.4.0.0/src/Core/System/SystemConfig/Schema/config.xsd">
+    <card>
+        <title>Settings</title>
+        <title lang="de-DE">Einstellungen</title>
+
+        <input-field type="bool">
+            <name>removeCopyright</name>
+            <label>Remove copyright completely</label>
+            <label lang="de-DE">Copyright komplett entfernen</label>
+        </input-field>
+
+        <input-field type="single-select">
+        <name>copyrightIcon</name>
+        <label>Copyright Icon</label>
+        <label lang="de-DE">Copyright Icon</label>
+            <options>
+                <option>
+                    <id>copyright</id>
+                    <name>Copyright</name>
+                    <name lang="de-DE">Copyright</name>
+                </option>
+                <option>
+                    <id>code</id>
+                    <name>Code</name>
+                    <name lang="de-DE">Code</name>
+                </option>
+                <option>
+                    <id>heart</id>
+                    <name>Heart</name>
+                    <name lang="de-DE">Herz</name>
+                </option>
+                <option>
+                    <id>infinity</id>
+                    <name>Infinity</name>
+                    <name lang="de-DE">Unendlich</name>
+                </option>
+                <option>
+                    <id>triangle</id>
+                    <name>Triangle</name>
+                    <name lang="de-DE">Dreieck</name>
+                </option>
+                <option>
+                    <id>arrow-right</id>
+                    <name>Arrow-right</name>
+                    <name lang="de-DE">Pfeil nach rechts</name>
+                </option>
+                <option>
+                    <id>checkmark</id>
+                    <name>Checkmark</name>
+                    <name lang="de-DE">Checkmark</name>
+                </option>
+                <option>
+                    <id>checkmark-block</id>
+                    <name>Checkmark Block</name>
+                    <name lang="de-DE">Checkmark Block</name>
+                </option>
+                <option>
+                    <id>checkmark-circle</id>
+                    <name>Checkmark Circle</name>
+                    <name lang="de-DE">Checkmark Kreis</name>
+                </option>
+                <option>
+                    <id>info</id>
+                    <name>Info</name>
+                    <name lang="de-DE">Info</name>
+                </option>
+                <option>
+                    <id>minus</id>
+                    <name>Minus</name>
+                    <name lang="de-DE">Minus</name>
+                </option>
+                <option>
+                    <id>plus</id>
+                    <name>Plus</name>
+                    <name lang="de-DE">Plus</name>
+                </option>
+                <option>
+                    <id>square</id>
+                    <name>Square</name>
+                    <name lang="de-DE">Quadrat</name>
+                </option>
+                 <option>
+                    <id>lightbulb</id>
+                    <name>Lightbulb</name>
+                    <name lang="de-DE">Glühbirne</name>
+                </option>
+                <option>
+                    <id>star</id>
+                    <name>Star</name>
+                    <name lang="de-DE">Stern</name>
+                </option>
+                <option>
+                    <id>paperplane</id>
+                    <name>Paperplane</name>
+                    <name lang="de-DE">Papierflugzeug</name>
+                </option>
+                <option>
+                    <id>rocket</id>
+                    <name>Rocket</name>
+                    <name lang="de-DE">Rakete</name>
+                </option>
+                <option>
+                    <id>beer</id>
+                    <name>Beer</name>
+                    <name lang="de-DE">Bier</name>
+                </option>
+            </options>
+        </input-field>
+
+
+        <input-field>
+            <name>copyrightText</name>
+            <label>Copyright text</label>
+            <label lang="de-DE">Copyright Text</label>
+            <placeholder>Realised with Shopware</placeholder>
+            <helpText>Choose the text which is should be written next to your icon.</helpText>
+            <helpText lang="de-DE">Wählen Sie den Text, welcher neben Ihrem gewählten Icon erscheinen soll.</helpText>
+        </input-field>
+
+        <input-field type="colorpicker">
+            <name>textColor</name>
+            <label>Text color</label>
+            <label lang="de-DE">Textfarbe</label>
+            <helpText>This will change only the text color of your copyright text.</helpText>
+            <helpText lang="de-DE">Diese Farbe hat nur Auswirkungen auf den Copyright Text.</helpText>
+        </input-field>
+
+         <input-field type="colorpicker">
+            <name>iconColor</name>
+            <label>Icon color</label>
+            <label lang="de-DE">Icon Farbe</label>
+            <helpText>You can choose a different color for your icon here.</helpText>
+            <helpText lang="de-DE">Hier können Sie die Farbe Ihres icons wählen.</helpText>
+        </input-field>
+    </card>
+
+    <card>
+        <title>Copyright and vat Settings</title>
+        <title lang="de-DE">Copyright und VAT Einstellungen</title>
+
+         <input-field type="colorpicker">
+            <name>backgroundColor</name>
+            <label>Background Color</label>
+            <label lang="de-DE">Hintergrundfarbe</label>
+            <helpText>This will change the background color of the whole footer block which is in the bottom. Including the VAT-Text</helpText>
+            <helpText lang="de-DE">Die Hintergrundfarbe wird den gesamten unteren Footer-Block färben. Die Hintegrund-Farbe des MwSt. ist hier mit eingeschlossen.</helpText>
+        </input-field>
+
+        <input-field type="colorpicker">
+            <name>vatTextColor</name>
+            <label>VAT Text Color</label>
+            <label lang="de-DE">MwSt. Textfarbe</label>
+            <helpText>Choose the text color of your VAT text here.</helpText>
+            <helpText lang="de-DE">Die Textfarbe Ihres MwSt. Textes können Sie hier definieren.</helpText>
+        </input-field>
+
+        <input-field type="colorpicker">
+            <name>linkColor</name>
+            <label>Link Color</label>
+            <label lang="de-DE">Linkfarbe</label>
+            <helpText>In the VAT-Text there is a link. You can set the link color here.</helpText>
+            <helpText lang="de-DE">Im MwSt. Text befindet sich ein Link. Hier können Sie die Linkfarbe wählen.</helpText>
+        </input-field>
+
+        <input-field type="colorpicker">
+            <name>linkHoverColor</name>
+            <label>Link Hover Color</label>
+            <label lang="de-DE">Link Hoverfarbe</label>
+            <helpText>You can set the hover color for the link right here.</helpText>
+            <helpText lang="de-DE">Hier können Sie die hover Farbe des Links bestimmen.</helpText>
+        </input-field>
+    </card>
+</config>
