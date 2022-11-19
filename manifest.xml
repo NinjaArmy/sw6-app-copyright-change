@@ -10,6 +10,6 @@
         <copyright>(c) by Ninja Army</copyright>
         <version>1.0.0</version>
         <icon>Resources/config/plugin.png</icon>
-        <license>proprietary</license>
+        <license>MIT</license>
     </meta>
 </manifest>
