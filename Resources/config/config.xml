@@ -110,14 +110,14 @@
         </input-field>
 
 
-        <input-field>
-            <name>copyrightText</name>
-            <label>Copyright text</label>
-            <label lang="de-DE">Copyright Text</label>
-            <placeholder>Realised with Shopware</placeholder>
-            <helpText>Choose the text which is should be written next to your icon.</helpText>
-            <helpText lang="de-DE">Wählen Sie den Text, welcher neben Ihrem gewählten Icon erscheinen soll.</helpText>
-        </input-field>
+        <component name="sw-snippet-field">
+			<name>copyrightText</name>
+			<snippet>NINJACopyrightChange.config.copyrightText</snippet>
+			<label>Copyright Text</label>
+			<label lang="de-DE">Copyright Text</label>
+			<helpText>Choose the text which is should be written next to your icon.</helpText>
+			<helpText lang="de-DE">Wählen Sie den Text, welcher neben Ihrem gewählten Icon erscheinen soll.</helpText>
+		</component>
 
         <input-field type="colorpicker">
             <name>textColor</name>

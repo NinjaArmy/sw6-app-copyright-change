@@ -20,7 +20,7 @@
 		{% if not config('NINJACopyrightChange.config.removeCopyright') %}
 
 			{% set copyrightIcon = config('NINJACopyrightChange.config.copyrightIcon') %}
-			{% set copyrightText = config('NINJACopyrightChange.config.copyrightText') %}
+			{% set copyrightText = 'NINJACopyrightChange.config.copyrightText'|trans|sw_sanitize %}
 			{% set textColor = config('NINJACopyrightChange.config.textColor') %}
 			{% set iconColor = config('NINJACopyrightChange.config.iconColor') %}
 
@@ -37,7 +37,7 @@
 					</span>
 				{% endif %}
 				{% if copyrightText is not empty %}
-					{{ copyrightText |trans|sw_sanitize }}
+					{{ copyrightText }}
 				{% else %}
 					{{ "footer.copyrightInfo"|trans|sw_sanitize }}
 				{% endif %}
